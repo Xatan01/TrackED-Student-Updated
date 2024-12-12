@@ -41,6 +41,7 @@ export default function Dashboard({ navigation }) {
         setIsCompleted(true); // Update state
         router.push('/home');
       };
+      
 
   return (
     <View style={styles.container}>
@@ -188,7 +189,7 @@ export default function Dashboard({ navigation }) {
                 </TouchableOpacity>
 
                 {/* Submit button */}
-                <TouchableOpacity style={styles.button2} onPress={() => openModal("Are you sure you want to submit your answers?")}>
+                <TouchableOpacity style={styles.button2} onPress={() => openModal("Are you sure you want to submit your answers? \n\n Note that you cannot change your answers upon submission.")}>
                     <Text style={styles.buttonText2}>Submit!</Text>
                 </TouchableOpacity>
             </View>

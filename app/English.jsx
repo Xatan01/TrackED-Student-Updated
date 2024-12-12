@@ -88,12 +88,12 @@ export default function Dashboard({ navigation }) {
         <View style={styles.container1}>
             <View style={styles.container2}>
               <View style={styles.textContainer}>
-                <Text style={styles.Text1}>English Assignment 2</Text>
+                <Text style={styles.Text1}>English Assignment 1</Text>
                 <Text style={styles.Text2}>Due: 11/11/2024 2PM</Text> 
               </View>
-              <View style={styles.button}>
-                <Text style={styles.buttonText}>Completed</Text>
-              </View>
+              <TouchableOpacity style={[styles.button, { backgroundColor: 'lightblue' }]} onPress={()=> router.push('/englishexplain')}>
+                <Text style={styles.buttonText}>View More</Text>
+              </TouchableOpacity>
             </View>
           </View>
 

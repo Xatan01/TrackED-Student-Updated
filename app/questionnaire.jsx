@@ -94,7 +94,7 @@ export default function Dashboard({ navigation }) {
                 <Text style={styles.Text1}>Biology Assignment 1</Text>
                 <Text style={styles.Text2}>Due: 10/11/2024 2PM</Text> 
               </View>
-              <TouchableOpacity style={styles.button} onPress={()=> router.push('/bioexplain')}>
+              <TouchableOpacity  style={[styles.button, { backgroundColor: 'lightblue' }]} onPress={()=> router.push('/bioexplain')}>
                 <Text style={styles.buttonText}>View More</Text>
               </TouchableOpacity>
             </View>
@@ -103,7 +103,7 @@ export default function Dashboard({ navigation }) {
                 <Text style={styles.Text1}>English Assignment 1</Text>
                 <Text style={styles.Text2}>Due: 11/11/2024 2PM</Text> 
               </View>
-              <TouchableOpacity style={styles.button} onPress={()=> router.push('/englishexplain')}>
+              <TouchableOpacity style={[styles.button, { backgroundColor: 'lightblue' }]}  onPress={()=> router.push('/englishexplain')}>
                 <Text style={styles.buttonText}>View More</Text>
               </TouchableOpacity>
             </View>
@@ -294,7 +294,7 @@ const styles = StyleSheet.create({
   },
   button: {
     zIndex: 10, 
-    backgroundColor: '#FFFFFF',
+    backgroundColor: '#ffffff',
     paddingVertical: 10,
     paddingHorizontal: 20,
     borderRadius: 20,

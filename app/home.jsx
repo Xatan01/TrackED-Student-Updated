@@ -9,6 +9,9 @@ export default function Dashboard({ navigation }) {
   const router = useRouter(); 
   const [assignmentStatus, setAssignmentStatus] = useState('In Progress');
 
+
+
+  
   useEffect(() => {
     // Retrieve the assignment status from AsyncStorage
     const fetchStatus = async () => {
@@ -42,7 +45,7 @@ export default function Dashboard({ navigation }) {
           <Text style={styles.titleText}>Let's Study,</Text>
           <Text style={styles.titleText2}>Timmy</Text>
         </View>
-        <Ionicons name="notifications-outline" size={24} color="#BF2D2D" style={styles.bellIcon} />
+        <Ionicons name="notifications-outline" size={24} color="#153B78" style={styles.bellIcon} />
       </View>
       {/* Content */}
       <ScrollView style={{ flex: 1 }} contentContainerStyle={styles.scrollViewContent}>
@@ -70,18 +73,18 @@ export default function Dashboard({ navigation }) {
                 <Text style={styles.Text1}>Math</Text>
                 <Text style={styles.Text2}>Classroom 1</Text>
               </View>
-              <TouchableOpacity style={styles.button}>
+              <View style={[styles.button, { backgroundColor: 'lightblue' }]}>
                 <Text style={styles.buttonText}>12PM-2PM</Text>
-              </TouchableOpacity>
+              </View>
             </View>
             <View style={styles.container3}>
               <View style={styles.textContainer}>
                 <Text style={styles.Text1}>English</Text>
                 <Text style={styles.Text2}>Classroom 1</Text>
               </View>
-              <TouchableOpacity style={styles.button}>
+              <View style={[styles.button, { backgroundColor: 'lightblue' }]}>
                 <Text style={styles.buttonText}>12PM-2PM</Text>
-              </TouchableOpacity>
+              </View>
             </View>
             </ScrollView>
           </View>
@@ -117,7 +120,7 @@ export default function Dashboard({ navigation }) {
 
         {/* improvement*/}
         <View style={[styles.container4, { marginLeft: 25, marginTop: '-33%'}]}>
-        <Text style={styles.titleText3}>Weak Topics</Text>
+        <Text style={styles.titleText3}>My Weak Topics</Text>
             <View style={[styles.container5, { flexDirection:'column' }]}>
                 <Text style={styles.Text1}>MATH</Text>
               <View style={[{flexDirection:'row'}]}>
